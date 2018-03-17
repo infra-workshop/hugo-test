@@ -9,6 +9,9 @@ jobs:
       - run:
           name: "Run Hugo"
           command: hugo
+      - run:
+          name: "Run Hugo"
+          command: ls
 #      - run:
 #          name: "Test Website"
 #          command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore
