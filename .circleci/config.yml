@@ -14,4 +14,4 @@ jobs:
 #          command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore
       - run:
           name: "Deploy"
-          command: cd public && firebase deploy --only hosting --token "$FIREBASE_TOKEN"
+          command: mv firebase.json public/ && mv .firebaserc public/ && cd public && firebase deploy --only hosting --token "$FIREBASE_TOKEN"
