@@ -1,4 +1,4 @@
-baseurl = "https://example.org/"
+baseurl = "https://myhugotest-fcaf2.firebaseapp.com/"
 languageCode = "en-us"
 title = "Natrium Theme"
 theme = "hugo-natrium-theme"
