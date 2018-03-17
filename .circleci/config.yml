@@ -9,12 +9,9 @@ jobs:
       - run:
           name: "Run Hugo"
           command: hugo
-      - run:
-          name: "Run Hugo"
-          command: ls public/
 #      - run:
 #          name: "Test Website"
 #          command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore
       - run:
           name: "Deploy"
-          command: mv firebase.json public/ && mv .firebaserc public/ && cd public && firebase deploy --only hosting --token "$FIREBASE_TOKEN"
+          command: firebase deploy --only hosting --token "$FIREBASE_TOKEN"
